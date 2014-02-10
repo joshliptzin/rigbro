@@ -138,6 +138,17 @@ $in_alarm_state = $mhs_alarm || $dead_rig_alarm;
   setTimeout(function() { location.reload(true); }, <?= $refresh_interval ?> * 1000);
 </script>
 <? } ?>
+<hr/>
+<h2>Donations Appreciated</h2>
+<div>
+    If you like RigBro, feel free to donate!
+    <br/><br/>
+    BTC: 1898o5diGApYksUkRygUCwVMm9TGwajk8Z
+    <br/>
+    LTC: LWRcxSRMLgHUDNoBYmf6EXvjtT8WtzRGx5
+    <br/>
+    DOGE: DB4qMug8FydqpG9wRk7BDbvPg83ThBERFG
+</div>
 
 </body>
 </html>
