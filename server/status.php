@@ -50,9 +50,10 @@ $in_alarm_state = $mhs_alarm || $dead_rig_alarm;
 </head>
 <body>
 
+<h2>RigBro Array</h2>
 <!-- Low MH/s Alert -->
 <div class="<?= $mhs_alarm ? "alarm" : "" ?>">
-    <h3>Total MH/s: <?= $total_mhs ?></h3>
+    <h3>Total MH/s: <?= $total_mhs ?> (expected: <?= $expected_mhs ?> MH/s)</h3>
 </div>
 
 <!-- Dead Rig Alert -->
