@@ -4,7 +4,7 @@ RigBro
 Free, open source, easy and customizable client/server based cryptocoin mining rig monitor. Supports an unlimited number of rigs. RigBro's got you covered!
 
 Why do we need another mining rig monitor? I hate reinventing the wheel, but as they say, necessity is the mother of invention.
-I wasn't happy with any of the existing rig monitoring software out there - they either require you to connect to each rig directly (so you have to configure port forwarding/firewall settings on each rig you want to monitor, also comes with security issues),
+I wasn't happy with any of the existing rig monitoring software out there - they either require you to connect to each rig directly (so you have to configure static IPs, port forwarding/firewall settings on each rig you want to monitor, also comes with security issues),
 aren't free or open source, focus too much on display/fancy css - turns out `<table>` works well for tabular data (who knew!), or were using the rigs themselves to send out downtime alerts (what happens if power or Internet goes out???).
 
 Anyway, there's my rant. Hopefully RigBro is as useful to you as it's been to me. Pull requests welcome.
@@ -83,3 +83,12 @@ SMS & E-Mail Downtime Alerts
 ======
 
 RigBro comes with a special page (alarm.php) which you can integrate with third party downtime notification services such as alertbot, site24x7, pingdom, etc. Simply point your third party notification service to the alert.php file, which produces HTTP status code 500 when your rig array is in the alarm state (the alarm state is defined at the top of status.php). You'll get pinged by e-mail and/or SMS within minutes of a problem occurring on any of your rigs, even at the individual GPU level. This is also nice because you'll get notified if your monitoring server goes down as well.
+
+Donations
+======
+
+If you like RigBro, feel free to donate!
+
+BTC: 1898o5diGApYksUkRygUCwVMm9TGwajk8Z
+LTC: LWRcxSRMLgHUDNoBYmf6EXvjtT8WtzRGx5
+DOGE: DB4qMug8FydqpG9wRk7BDbvPg83ThBERFG

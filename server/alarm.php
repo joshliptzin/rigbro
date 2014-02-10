@@ -1,5 +1,16 @@
 <?php
 /**
+ * RigBro by Josh Liptzin
+ * https://github.com/joshliptzin/rigbro
+ * MIT License
+ *
+ * If you like RigBro, feel free to donate!
+ *
+ * BTC: 1898o5diGApYksUkRygUCwVMm9TGwajk8Z
+ * LTC: LWRcxSRMLgHUDNoBYmf6EXvjtT8WtzRGx5
+ * DOGE: DB4qMug8FydqpG9wRk7BDbvPg83ThBERFG
+ */
+/**
  * This file is useful if you want to connect RigBro to
  * third party SMS/email alert services, such as
  * alertbot, site24x7, pingdom, etc.
