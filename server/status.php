@@ -11,6 +11,15 @@ $dead_rig_names = getDeadRigs($rigs);
 
 $mhs_alarm = $total_mhs < $expected_mhs;
 $dead_rig_alarm = sizeof($dead_rig_names) > 0;
+
+/**
+ * The default alarm state is triggered when the MH/s rate
+ * is less than expected, or when one rig fails to post data
+ * for longer than $seconds_considered_down.
+ *
+ * You can add code here to add additional alarm triggers, such as a GPU
+ * producing HW error or reaching a high temperature.
+ */
 $in_alarm_state = $mhs_alarm || $dead_rig_alarm;
 ?>
 <!DOCTYPE html>

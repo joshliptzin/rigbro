@@ -79,4 +79,7 @@ Testing
 ======
 Test to make sure each rig is posting to the server correctly. Run php cron.php in client/ on the rig you're testing, and check that on the server you see the rig-data/{rig-name}.txt corresponding text file containing the data that was posted. If you don't see that txt file, you can troubleshoot from there. If you do, then move on to load the status.php page in your web browser and verify that everything looks good.
 
+SMS & E-Mail Downtime Alerts
+======
 
+RigBro comes with a special page (alarm.php) which you can integrate with third party downtime notification services such as alertbot, site24x7, pingdom, etc. Simply point your third party notification service to the alert.php file, which produces HTTP status code 500 when your rig array is in the alarm state (the alarm state is defined at the top of status.php). You'll get pinged by e-mail and/or SMS within minutes of a problem occurring on any of your rigs, even at the individual GPU level. This is also nice because you'll get notified if your monitoring server goes down as well.
