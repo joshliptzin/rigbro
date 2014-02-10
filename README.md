@@ -50,8 +50,9 @@ Install php with curl support on all rigs and monitor
 
 `apt-get install php5-common php5-cli php5-curl`
 
-Set cron script to run every 2 minutes
+Set cron script to run every 2 minutes (be sure to edit root's crontab if you aren't logged in as root)
 
+`sudo su -`
 `crontab -e`
 
 Add the following line to the end assuming your php binary is located at /usr/bin/php and RigBro is installed at /home/script:
@@ -73,7 +74,9 @@ Edit server/config.php
 
 Install and configure php and apache on the monitoring server. Be sure apache has write access to the rig-data directory.
 
-`chmod g+rws rigbro/server/rig-data`
+`chmod 755 rigbro/server/rig-data`
+
+That usually works, otherwise try chmod 777 temporarily or try changing user/group settings.
 
 Testing
 ======
