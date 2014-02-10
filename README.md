@@ -83,6 +83,8 @@ Install and configure php and apache on the monitoring server. Be sure apache ha
 
 That usually works, otherwise try chmod 777 temporarily or try changing user/group settings.
 
+Your RigBro dashboard will be available at server/status.php, so for example, `http://yourserver.com/rigbro/server/status.php`
+
 Testing
 ======
 Test to make sure each rig is posting to the server correctly. Run php cron.php in client/ on the rig you're testing, and check that on the server you see the rig-data/{rig-name}.txt corresponding text file containing the data that was posted. If you don't see that txt file, you can troubleshoot from there. If you do, then move on to load the status.php page in your web browser and verify that everything looks good.
