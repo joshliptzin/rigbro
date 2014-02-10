@@ -90,5 +90,7 @@ Donations
 If you like RigBro, feel free to donate!
 
 BTC: 1898o5diGApYksUkRygUCwVMm9TGwajk8Z
+
 LTC: LWRcxSRMLgHUDNoBYmf6EXvjtT8WtzRGx5
+
 DOGE: DB4qMug8FydqpG9wRk7BDbvPg83ThBERFG
