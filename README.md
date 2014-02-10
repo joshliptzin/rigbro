@@ -25,6 +25,11 @@ Works with CGminer.
 
 Requires PHP on each rig, PHP+Apache on server monitor. Tested on BAMT, SMOS, and Ubuntu Linux. Probably compatible with Windows rigs as long as PHP is installed and the cron script is running, but not tested.
 
+Screenshot
+======
+
+![RigBro dashboard screenshot](rigbro-screen.png "RigBro Combined Dashboard")
+
 Installation
 ======
 
