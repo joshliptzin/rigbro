@@ -1,5 +1,15 @@
 <?php
-
+/**
+ * RigBro by Josh Liptzin
+ * https://github.com/joshliptzin/rigbro
+ * MIT License
+ *
+ * If you like RigBro, feel free to donate!
+ *
+ * BTC: 1FRgq7BuM4WBR2N5BUfs8EBbqe2PG8VACf
+ * LTC: LWRcxSRMLgHUDNoBYmf6EXvjtT8WtzRGx5
+ * DOGE: DB4qMug8FydqpG9wRk7BDbvPg83ThBERFG
+ */
 /**
  * Seconds between status page auto-refresh.
  * Set to 0 for no auto-refresh.
