@@ -69,6 +69,7 @@ function getDeadRigs($rigs) {
         if (isRigDown($rig)) {
             $dead[] = $rig["name"];
         }
+      }
     }
     return $dead;
 }
