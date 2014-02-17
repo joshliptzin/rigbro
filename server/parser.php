@@ -66,7 +66,7 @@ function totalMhs($rigs) {
 function getDeadRigs($rigs) {
     $dead = array();
     foreach ($rigs as $rig) {
-        if ($rig["summary"]["STATUS"]["STATUS"] != "S") {
+        if (isRigDown($rig)) {
             $dead[] = $rig["name"];
         }
     }
@@ -104,7 +104,8 @@ function getRigUptime($rig) {
  */
 function isRigDown($rig) {
     global $seconds_considered_down;
-    return getRigSecondsSinceUpdate($rig) > $seconds_considered_down;
+    return getRigSecondsSinceUpdate($rig) > $seconds_considered_down
+        || $rig["summary"]["STATUS"]["STATUS"] != "S";
 }
 
 ////////////////////////////////////
