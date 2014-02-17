@@ -66,9 +66,13 @@ function totalMhs($rigs) {
 function getDeadRigs($rigs) {
     $dead = array();
     foreach ($rigs as $rig) {
-        if ($rig["summary"]["STATUS"]["STATUS"] != "S") {
-            $dead[] = $rig["name"];
+      if (is_array($rig)) {
+	if (!is_array($rig["summary"])) {
+	  $dead[] = $rig["name"];
+	} else if ($rig["summary"]["STATUS"]["STATUS"] != "S") {
+	  $dead[] = $rig["name"];
         }
+      }
     }
     return $dead;
 }
