@@ -105,7 +105,10 @@ function getRigUptime($rig) {
  */
 function isRigDown($rig) {
     global $seconds_considered_down;
-    return getRigSecondsSinceUpdate($rig) > $seconds_considered_down
+    return !is_array($rig)
+        || !is_array($rig["summary"])
+        || !is_array($rig["summary"]["STATUS"])
+        || getRigSecondsSinceUpdate($rig) > $seconds_considered_down
         || $rig["summary"]["STATUS"]["STATUS"] != "S";
 }
 
