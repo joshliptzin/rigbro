@@ -25,6 +25,11 @@ Works with CGminer.
 
 Requires PHP on each rig, PHP+Apache on server monitor. Tested on BAMT, SMOS, and Ubuntu Linux. Probably compatible with Windows rigs as long as PHP is installed and the cron script is running, but not tested.
 
+Screenshot
+======
+
+![RigBro dashboard screenshot](rigbro-screen.png "RigBro Combined Dashboard")
+
 Installation
 ======
 
@@ -78,6 +83,8 @@ Install and configure php and apache on the monitoring server. Be sure apache ha
 
 That usually works, otherwise try chmod 777 temporarily or try changing user/group settings.
 
+Your RigBro dashboard will be available at server/status.php, so for example, `http://yourserver.com/rigbro/server/status.php`
+
 Testing
 ======
 Test to make sure each rig is posting to the server correctly. Run php cron.php in client/ on the rig you're testing, and check that on the server you see the rig-data/{rig-name}.txt corresponding text file containing the data that was posted. If you don't see that txt file, you can troubleshoot from there. If you do, then move on to load the status.php page in your web browser and verify that everything looks good.
@@ -92,7 +99,7 @@ Donations
 
 If you like RigBro, feel free to donate!
 
-BTC: 1898o5diGApYksUkRygUCwVMm9TGwajk8Z
+BTC: 1FRgq7BuM4WBR2N5BUfs8EBbqe2PG8VACf
 
 LTC: LWRcxSRMLgHUDNoBYmf6EXvjtT8WtzRGx5
 
